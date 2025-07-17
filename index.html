@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV Juan Eduardo Terán</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 2rem;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        animation: fadeIn 1.2s ease-in-out;
+      }
+      .profile-pic {
+        position: absolute;
+        top: 20px;
+        left: 500px;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #004aad;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        color: #004aad;
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+      }
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #004aad;
+        padding-bottom: 5px;
+        margin-top: 1.5rem;
+      }
+      p,
+      li {
+        font-size: 0.95rem;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .section {
+        animation: slideUp 1s ease forwards;
+        opacity: 0;
+      }
+      .section:nth-child(even) {
+        animation-delay: 0.2s;
+      }
+      .section:nth-child(odd) {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .info,
+      .contact {
+        margin-bottom: 1rem;
+      }
+      .contact span {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+      .highlight {
+        font-weight: bold;
+        color: #004aad;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="profile.jpg" alt="Foto de Juan Eduardo Terán" class="profile-pic" />
+      <div class="info section">
+        <h1>Juan Eduardo Terán Cortez</h1>
+        <div class="contact">
+          <span><strong>Dirección:</strong> Circuito Huele de Noche #103, Natura, Aguascalientes</span>
+          <span><strong>Tel:</strong> 449 375 8277</span>
+          <span><strong>Email:</strong> bardok676@gmail.com</span>
+          <span><strong>Edad:</strong> 21 años</span>
+          <span><strong>Fecha de nacimiento:</strong> 9 de octubre de 2003</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Perfil Profesional</h2>
+        <p>
+          Joven proactivo y responsable con experiencia en control de calidad en entornos industriales. Busco una oportunidad para desarrollarme en el área administrativa o de ventas, aportando mis conocimientos técnicos, habilidades organizativas y actitud de aprendizaje constante.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Experiencia Laboral</h2>
+        <p><strong>Sensata Technologies</strong> — Aguascalientes, Área de Calidad (2021 - 2022)</p>
+        <ul>
+          <li>Inspección y validación de productos electrónicos.</li>
+          <li>Cumplimiento de estándares de calidad.</li>
+          <li>Uso de herramientas básicas de medición.</li>
+          <li>Supervisor: Gustavo</li>
+          <span><strong>Tel:</strong> 449 190 4707</span>
+        </ul>
+        <p><strong>Sistema de Arnéses</strong> — Aguascalientes, Operario de Calidad (2022 – 6 meses)</p>
+        <ul>
+          <li>Verificación de piezas eléctricas y cableado automotriz.</li>
+          <li>Registro de productos no conformes e incidencias.</li>
+          <li>Trabajo bajo presión en líneas de producción.</li>
+          <li>Supervisor: Mauricio Villela</li>
+          <span><strong>Tel:</strong> 449 892 9972</span>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Formación Académica</h2>
+        <ul>
+          <li>Primaria: Primaria Centenario (2010)</li>
+          <li>Secundaria: Escuela Secundaria Mahatma Gandhi No. 34</li>
+          <li>Preparatoria: Alexander Hamilton (en curso)</li>
+          <li>Estudios autodidactas: Desarrollo web (HTML, CSS, JS) - FreeCodeCamp</li>
+          <li>En proceso de certificación en programación web básica</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Conocimientos Técnicos</h2>
+        <ul>
+          <li>Microsoft Excel, Word, correo electrónico</li>
+          <li>HTML, CSS y JavaScript (nivel básico)</li>
+          <li>Herramientas digitales para tareas administrativas</li>
+          <li>WhatsApp Business y plataformas de comunicación</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Español: Nativo</li>
+          <li>Inglés: Básico</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Cualidades Personales</h2>
+        <ul>
+          <li>Puntual y responsable</li>
+          <li>Aprendizaje rápido</li>
+          <li>Buena actitud y organización</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
